@@ -16,7 +16,8 @@
 :root{
   --main__color--blue: #5757ce;
   --main__color--grey: #e2dddda1;
-  --main__color--light--blue: #c6e7e6;
+  --main__color--light--blue: #e7ecec;
+  --sub__color--box--light--blue:#d5d5eb;
 
   --font__color-white:#fff;
   --font__color-black:#000;
@@ -42,6 +43,10 @@
 
   .nav__logo{
     font-size:2rem;
+  }
+
+  .nav__container--bar{
+    transform: rotate(180deg);
   }
 
   /* nav ends */
@@ -95,12 +100,145 @@
 
   .hero__img{
     flex:1;
-
     padding:3rem 0;
   }
   .hero__img-blue-box{
-    width:200px;
+    width:240px;
   }
 
   /* hero ends */
+
+  /* request starts */
+
+  .request__title{
+    margin:3rem auto;
+    font-size:2rem;
+    letter-spacing: -.1rem;
+    font-weight: 500;
+  }
+
+  .card{
+    background-color: var(--main__color--light--blue);
+    padding:2rem;
+    margin:6rem auto 3rem;
+  }
+
+  .card__sort{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    height:60px;
+  }
+
+  .card__sort__title{
+    background-color: var(--sub__color--box--light--blue);
+    padding:.5rem 1rem;
+    border-radius: 7px;
+    font-size: 1rem;
+    color:var(--main__color--blue);
+    font-weight:700;
+    text-transform: capitalize;
+    letter-spacing: -.02rem;
+  }
+
+  .card__shadow{
+    position:absoulte;
+    width:95px;
+    height:11px;
+    background-color: #d3d3d3;
+    transform:translate(530px, -20px);
+    border-radius:100%;
+    z-index:2;
+  }
+
+  .card__sort__pinkbox{
+    width:150px;
+    transform: translateY(-120px);
+    position:relative;
+  }
+
+  .card__info__title{
+    font-size:2rem;
+    letter-spacing: -.1rem;
+  }
+  .card_info__invite{
+    font-size:1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .card__info__gift--info{
+    font-size:1.2rem;
+    font-weight: 400;
+    margin-top:1rem;
+  }
+
+  .card__info__gift--name{
+    font-size:1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  .card__progress{
+    display:flex;
+    gap:4rem;
+    margin:1rem 0;
+  }
+
+  .card__progress__first-container{
+    line-height: 1.5;
+  }
+
+  .first-container__goal{
+    font-size:1.2rem;
+    font-weight: 500;
+  }
+
+  .first-container__money{
+    font-size:1.2rem;
+    color:orangered;
+    font-weight: 600;
+  }
+
+  .card__progress__second-container{
+    line-height: 1.5;
+    font-weight:500;
+  }
+
+  .second-container__charity{
+    font-size:1.2rem;
+  }
+
+  .second-container__percentage{
+    font-size:1.2rem;
+    font-weight:600;
+  }
+
+  .card__due-date{
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  .card__date{
+    font-weight: 700;
+  }
+
+  /* ad start  */
+  .ad{
+    height:200px;
+    background: no-repeat url('/ad__ad.png') center / contain;
+  }
+
+  /* ad ends */
+
+  /* footer starts */
+  .footer{
+    margin-top:1.5rem;
+    background-color: var(--sub__color--box--light--blue);
+    padding:1rem 0;
+  }
+
+  .footer__logo{
+    border:red solid 2px;
+    height:2.5rem;
+  }
 }
