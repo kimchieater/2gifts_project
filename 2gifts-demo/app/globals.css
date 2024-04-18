@@ -21,6 +21,7 @@
 
   --font__color-white:#fff;
   --font__color-black:#000;
+  --font__color-grey:rgb(106, 108, 114);
 }
 
 /* utility class */
@@ -232,13 +233,40 @@
 
   /* footer starts */
   .footer{
-    margin-top:1.5rem;
+    margin-top:2.2rem;
     background-color: var(--sub__color--box--light--blue);
     padding:1rem 0;
   }
 
+  .footer__info{
+    line-height: 1.7;
+  }
+
   .footer__logo{
-    border:red solid 2px;
     height:2.5rem;
   }
+
+  .footer__email{
+    color:var(--font__color-grey);
+    font-weight: 500;
+  }
+
+  .footer__number{
+    color:var(--font__color-grey);
+    font-weight: 500;
+    margin-bottom:1rem;
+  }
+
+  .footer__terms{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem 2rem;
+    gap:1rem;
+    text-transform: capitalize;
+    border-top:rgb(206, 206, 206) 1px solid;
+    font-size: 1rem;
+    letter-spacing: .02rem;
+  }
+
 }
